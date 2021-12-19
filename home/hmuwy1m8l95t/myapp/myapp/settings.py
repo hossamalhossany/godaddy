@@ -69,7 +69,7 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# here i begin to test mysql database with godaddy server
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
