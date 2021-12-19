@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['hossamweb.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'myapp.apps.myappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,7 +74,7 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'phonebook',
+        'NAME': 'mydb2',
         'USER': 'hossam',
         'PASSWORD': 'Sam198053#1',
         'HOST': '92.205.4.113',
