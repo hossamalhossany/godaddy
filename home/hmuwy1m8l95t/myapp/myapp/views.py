@@ -1,7 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
 from .forms import contact_form
 from .models import test1
 from django.db import connection
+
+
+# from django.http import HttpResponse
 
 
 def index(request):
@@ -20,3 +24,9 @@ def put_data_to_databasa(request):
         rows = cursor.fetchall()
     html_page = "myapp/index.html"
     return render(request, html_page, {'rows': rows})
+
+
+def back_to_hossamweb(request):
+    html_page = "http://www.hossamweb.com/"
+    return redirect(html_page)
+
