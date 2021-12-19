@@ -2,13 +2,11 @@ from django.shortcuts import render
 from .forms import contact_form
 from .models import test1
 from django.db import connection
-from datetime import datetime
-import pytz
+
 
 def index(request):
-    time2 = datetime.now(pytz.timezone('egypt'))
     html_page = 'myapp/index.html'
-    return render(request, html_page, {'contact_form': contact_form, 'time2': time2})
+    return render(request, html_page, {'contact_form': contact_form})
 
 
 def put_data_to_databasa(request):
