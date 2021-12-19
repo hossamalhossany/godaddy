@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hossam Web - my app</title>
+</head>
+<body>
+<h1 >Hi this first page at my project</h1>
+    **********************
+    <div>
+        <form method="POST" action="put_data_to_databasa">
+            <h1>
+                {% csrf_token %}
+                {{ contact_form.as_p }}
+                <input type="submit" value="save" >
+            </h1>        </form>    </div>
+    <div>        {{ rows }}    </div>
+</body>
+</html>
