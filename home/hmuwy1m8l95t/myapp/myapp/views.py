@@ -27,6 +27,8 @@ def put_data_to_databasa(request):
 
 # this update - wordpress - 20-12-2021
 def back_to_hossamweb(request):
-    html_page = "http://www.hossamweb.com/"
+    html_page = "www.hossamweb.com"
     return redirect(html_page)
 
+def home(request):
+    return redirect("www.hossamweb.com")
