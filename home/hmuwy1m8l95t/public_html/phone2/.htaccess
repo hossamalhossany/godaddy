@@ -1,0 +1,5 @@
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+SetEnv aa source /home/hmuwy1m8l95t/virtualenv/phone2/2.7/bin/activate && cd /home/hmuwy1m8l95t/phone2
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
