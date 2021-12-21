@@ -52,8 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'myapp.urls'
-# ROOT_HOSTCONF = 'myapp.hosts'
-# DEFAULT_HOST= 'www'
+ROOT_HOSTCONF = 'myapp.hosts'
+DEFAULT_HOST= 'www'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
