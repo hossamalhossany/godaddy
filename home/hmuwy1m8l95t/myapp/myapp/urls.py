@@ -8,7 +8,7 @@ urlpatterns = [
     path("myapp.hossamweb.com/back_to_hossamweb/", views.back_to_hossamweb, name='back_to_hossamweb'),
     # url("back_to_hossamweb", views.back_to_hossamweb),
 
-    # path('', views.home),
+    # path('', views.home), #git 25-12-2021 1:25 pm - work
 
     # here this issue # hossam
 
