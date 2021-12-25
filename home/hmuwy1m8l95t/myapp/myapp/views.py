@@ -23,6 +23,10 @@ def put_data_to_databasa(request):
     return render(request, html_page, {'rows': rows})
 
 
-def back_to_hossamweb(request):
+def back_to_hossamweb():
     html_page = "hossamweb.com"
+    return redirect(html_page)
+
+def back_to_google():
+    html_page = "www.google.com"
     return redirect(html_page)
