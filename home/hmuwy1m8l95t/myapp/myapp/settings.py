@@ -55,6 +55,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'myapp.urls'
 ROOT_HOSTCONF = 'myapp.hosts'
 DEFAULT_HOST = 'www'
+DEFAULT_REDIRECT_URL = "http://www.hossamweb.com"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
