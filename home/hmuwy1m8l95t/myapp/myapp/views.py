@@ -25,13 +25,13 @@ def put_data_to_databasa(request):
     return render(request, html_page, {'rows': rows})
 
 
-def back_to_hossamweb():
+def back_to_hossamweb(request):
     html_page = "hossamweb.com"
-    return redirect(html_page)
+    return reversed(html_page)
 
-def back_to_google():
+def back_to_google(request):
     html_page = "www.google.com"
-    return HttpRequest(html_page)
+    return redirect(html_page)
 
 def wildcard_redirect(request, path=None):
     new_url = DEFAULT_REDIRECT_URL
