@@ -32,7 +32,7 @@ def back_to_hossamweb(request):
 def back_to_google(request):
     html_page = "www.google.com"
     return redirect(html_page)
-
+#hhh
 def wildcard_redirect(request, path=None):
     new_url = DEFAULT_REDIRECT_URL
     if path is not None:
