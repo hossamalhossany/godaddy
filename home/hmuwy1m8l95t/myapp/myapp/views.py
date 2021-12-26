@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect,HttpRequest
 from django.conf import settings
 from .forms import contact_form
 from .models import test1
@@ -31,7 +31,7 @@ def back_to_hossamweb():
 
 def back_to_google():
     html_page = "www.google.com"
-    return redirect(html_page)
+    return HttpRequest(html_page)
 
 def wildcard_redirect(request, path=None):
     new_url = DEFAULT_REDIRECT_URL
